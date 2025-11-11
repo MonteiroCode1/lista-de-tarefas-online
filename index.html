@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Importando o Vue.js direto da CDN -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
-    
+  <div id="app" class="container">
+    <h1>📝 Lista de Tarefas</h1>
+
+    <div class="input-area">
+      <input 
+        v-model="novaTarefa" 
+        @keyup.enter="adicionarTarefa"
+        placeholder="Digite uma nova tarefa"
+      >
+      <button @click="adicionarTarefa">Adicionar</button>
+    </div>
+
+    <ul>
+      <li v-for="(tarefa, index) in tarefas" :key="index" :class="{ concluida: tarefa.concluida }">
+        <span @click="tarefa.concluida = !tarefa.concluida">{{ tarefa.texto }}</span>
+        <div class="botoes">
+          <button @click="editarTarefa(index)">✏️</button>
+          <button @click="removerTarefa(index)">🗑️</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
-<!--
-Flor de hiroshima
-
-Pensem nas crianças
-Mudas telepáticas
-Pensem nas meninas
-Cegas inexatas
-Pensem nas mulheres
-Rotas alteradas
-Pensem nas feridas
-Como rosas cálidas
-Mas oh não se esqueçam
-Da rosa da rosa
-Da rosa de Hiroshima
-A rosa hereditária
-A rosa radioativa
-Estúpida e inválida
-A rosa com cirrose
-A antirrosa atômica
-Sem cor sem perfume
-Sem rosa sem nada.
-
--->
