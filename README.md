@@ -36,7 +36,7 @@ Durante o desenvolvimento deste projeto, aprendemos sobre:
 ## 👨‍💻 Colaboradores
 
 - **Guilherme Monteiro Duarte**  
-- **João Gabriel** git hub (jgabriel5th)  
-- **Willian** git hub (WillianUIZ)
+- **João Gabriel** (jgabriel5th)  
+- **Willian** (WillianUIZ)
 
 - Este projeto foi desenvolvido para fins de aprendizado.
