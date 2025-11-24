@@ -1,6 +1,6 @@
 /* === Estilo geral === */
 body {
-  background-color: #f2f5f9;
+  background-color: rgb(185, 232, 255);
   font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
@@ -13,9 +13,9 @@ body {
 /* === Container principal === */
 .container {
   background: #fff;
-  padding: 30px;
+  padding: 45px;
   border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
   width: 90%;
   max-width: 450px;
 }
