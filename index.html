@@ -20,7 +20,7 @@
       >
       <button @click="adicionarTarefa">Adicionar</button>
     </div>
-
+<!-- Colocar a função de apresentar o horário--> 
     <ul>
       <li v-for="(tarefa, index) in tarefas" :key="index" :class="{ concluida: tarefa.concluida }">
         <span @click="tarefa.concluida = !tarefa.concluida">{{ tarefa.texto }}</span>
@@ -35,3 +35,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
