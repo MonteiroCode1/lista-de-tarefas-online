@@ -120,3 +120,8 @@ li span {
   white-space: normal;       /* permite quebrar linha */
   overflow-wrap: anywhere;   /* quebra automaticamente quando precisar */
 }
+.input-horario {
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}

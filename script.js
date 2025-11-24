@@ -3,19 +3,27 @@ const { createApp } = Vue
 
 createApp({
   data() {
-    return {
-      novaTarefa: "",
-      tarefas: []
+  return {
+    novaTarefa: "",
+    novoHorario: "",
+    tarefas: []
     }
   },
   methods: {
     // Adicionar uma nova tarefa
     adicionarTarefa() {
-      const texto = this.novaTarefa.trim()
-      if (texto !== "") {
-        this.tarefas.push({ texto, concluida: false })
-        this.novaTarefa = ""
-        this.salvarTarefas()
+    const texto = this.novaTarefa.trim()
+
+    if (texto !== "" && this.novoHorario !== "") {
+
+      this.tarefas.push({
+      texto,
+      concluida: false,
+      horario: this.novoHorario.replace("T", " às ")
+      })
+      this.novaTarefa = ""
+      this.novoHorario = ""
+      this.salvarTarefas()
       }
     },
 
