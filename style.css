@@ -113,3 +113,10 @@ li.concluida span {
 .botoes button:hover {
   transform: scale(1.2);
 }
+
+li span {
+  display: block;
+  word-wrap: break-word;     /* quebra qualquer palavra grande */
+  white-space: normal;       /* permite quebrar linha */
+  overflow-wrap: anywhere;   /* quebra automaticamente quando precisar */
+}
