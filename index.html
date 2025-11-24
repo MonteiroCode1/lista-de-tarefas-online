@@ -25,6 +25,8 @@
       <li v-for="(tarefa, index) in tarefas" :key="index" :class="{ concluida: tarefa.concluida }">
         <span @click="tarefa.concluida = !tarefa.concluida">{{ tarefa.texto }}</span>
         <div class="botoes">
+          <!--Linha Nova-->
+          <button @click="tarefa.concluida = !tarefa.concluida">✔️</button>
           <button @click="editarTarefa(index)">✏️</button>
           <button @click="removerTarefa(index)">🗑️</button>
         </div>
