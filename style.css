@@ -22,7 +22,7 @@ body {
 
 h1 {
   text-align: center;
-  color: #333;
+  color: #007bff;
   margin-bottom: 20px;
 }
 
@@ -141,17 +141,8 @@ body.dark input {
   color: white;
 }
 
-body.dark button {
-  background-color: #555;
-  color: white;
-}
-/* Título no modo escuro — mais branco e sublinhado */
 body.dark h1 {
-  color: #ffffff;                  /* deixa o texto branco */
-  text-decoration: underline;      /* coloca sublinhado */
-  text-decoration-color: #ffffff;  /* sublinhado branco */
-  text-decoration-thickness: 3px;  /* deixa a linha mais grossa */
-  text-underline-offset: 6px;      /* dá espaço entre o texto e a linha */
+  color: #007bff;                 
 }
 /* ---- TEMA ESCURO ---- */
 
@@ -167,7 +158,6 @@ body.dark input {
 }
 
 body.dark button {
-  background: #333;
   color: #fff;
 }
 
@@ -186,9 +176,6 @@ body.dark .horario {
 }
 
 body.dark h1 {
-  color: #ffffff;
-  text-decoration: underline;
-  text-decoration-thickness: 3px;
-  text-underline-offset: 6px;
+  color: #007bff;
 }
 
