@@ -13,6 +13,7 @@
     <h1>📝 Lista de Tarefas</h1>
 
     <div class="input-area">
+      <button @click="trocarTema" class="tema-btn">🌙 Mudar Tema</button>
       <input 
         v-model="novaTarefa" 
         @keyup.enter="adicionarTarefa"

@@ -125,3 +125,70 @@ li span {
   border-radius: 6px;
   border: 1px solid #ccc;
 }
+/* Tema Escuro */
+body.dark {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+body.dark .container {
+  background-color: #2c2c2c;
+  color: white;
+}
+
+body.dark input {
+  background-color: #3a3a3a;
+  color: white;
+}
+
+body.dark button {
+  background-color: #555;
+  color: white;
+}
+/* Título no modo escuro — mais branco e sublinhado */
+body.dark h1 {
+  color: #ffffff;                  /* deixa o texto branco */
+  text-decoration: underline;      /* coloca sublinhado */
+  text-decoration-color: #ffffff;  /* sublinhado branco */
+  text-decoration-thickness: 3px;  /* deixa a linha mais grossa */
+  text-underline-offset: 6px;      /* dá espaço entre o texto e a linha */
+}
+/* ---- TEMA ESCURO ---- */
+
+body.dark {
+  background: #121212;
+  color: #ffffff;
+}
+
+body.dark input {
+  background: #1e1e1e;
+  color: #fff;
+  border-color: #444;
+}
+
+body.dark button {
+  background: #333;
+  color: #fff;
+}
+
+body.dark li {
+  background: #1f1f1f;
+  color: #ffffff;
+  border-color: #333;
+}
+
+body.dark li span {
+  color: #ffffff;
+}
+
+body.dark .horario {
+  color: #bbbbbb;
+}
+
+body.dark h1 {
+  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
+}
+

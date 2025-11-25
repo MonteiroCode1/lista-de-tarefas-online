@@ -6,11 +6,21 @@ createApp({
   return {
     novaTarefa: "",
     novoHorario: "",
-    tarefas: []
+    tarefas: [],
+    temaEscuro: false
     }
   },
   methods: {
-    // Adicionar uma nova tarefa
+    trocarTema() {
+      this.temaEscuro = !this.temaEscuro
+
+      // aplica a classe no body
+      document.body.classList.toggle("dark", this.temaEscuro)
+
+      // salva no localStorage
+      localStorage.setItem("temaEscuro", this.temaEscuro)
+    },
+    
     adicionarTarefa() {
     const texto = this.novaTarefa.trim()
 
