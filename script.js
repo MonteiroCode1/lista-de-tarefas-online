@@ -11,6 +11,14 @@ createApp({
     }
   },
   methods: {
+    // Limpar todas as tarefas
+  limparTudo() {
+    if (confirm("Tem certeza que deseja apagar TODAS as tarefas?")) {
+      this.tarefas = []
+      this.salvarTarefas()
+    }
+  },
+
     trocarTema() {
       this.temaEscuro = !this.temaEscuro
 
